@@ -29,6 +29,12 @@
     margin: 0 auto;
 }
 
+@mixin reset-lista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 // Grid
 @mixin grid($columnas:1,$gap:5rem) {
     display: grid;
