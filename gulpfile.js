@@ -96,4 +96,7 @@ export function dev() {
     watch('src/gallery/**/*.{png,jpg}', imagenes)
 }
 
+// ? Compilar para producción
+export const build = series(imagenes, crop, js, styles);
+
 export default series(imagenes, crop, js, styles, dev)
